@@ -1,66 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Us | Prachi Gift Center</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Contact Us | Prachi Ladies Fashion and Gift Center</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body{
+  font-family:'Poppins', sans-serif;
+  background:#f7f7f7;
+}
+
+/* HERO */
+.contact-hero{
+  background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+  padding:80px 20px;
+  text-align:center;
+  animation:fadeIn 1.2s ease;
+}
+
+.contact-hero h1{
+  font-family:'Playfair Display', serif;
+  font-size:42px;
+}
+
+.contact-hero p{
+  font-size:18px;
+  max-width:800px;
+  margin:auto;
+}
+
+/* CONTACT CARD */
+.contact-card{
+  background:white;
+  border-radius:16px;
+  padding:30px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+  transition:0.4s;
+  height:100%;
+}
+
+.contact-card:hover{
+  transform:translateY(-10px);
+}
+
+/* BUTTONS */
+.contact-btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 25px;
+  border-radius:30px;
+  font-size:16px;
+  transition:0.3s;
+}
+
+.contact-btn:hover{
+  transform:scale(1.08);
+}
+
+/* MAP */
+.map-box{
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* FOOTER */
+footer{
+  background:#212529;
+  color:white;
+  text-align:center;
+  padding:18px;
+  margin-top:60px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(40px);}
+  to{opacity:1; transform:translateY(0);}
+}
+</style>
 </head>
+
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Prachi Gift Center</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="gifts.html">Gifts</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">Prachi Gift Center</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="gifts.html">Gifts</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
 </nav>
 
-<!-- Contact Section -->
-<section class="container my-5">
-  <h2 class="text-center mb-4">Contact Us</h2>
-
-  <p><strong>Shop Name:</strong> Prachi Ladies Fashion and Gift Center</p>
-  <p><strong>Address:</strong>Opposite Madina complex  Aurad(B), Dist:Bidar, Karnataka – 585326</p>
-  <p><strong>Phone / WhatsApp:</strong> 7483917843</p>
-
- <a href="https://wa.me/917483917843" class="btn btn-success me-2">
-  WhatsApp 1
-</a>
-
-<a href="https://wa.me/919663649768" class="btn btn-success">
-  WhatsApp 2
-</a>
-
-
-  <!-- Google Map -->
-  <div class="mt-4">
-    <iframe 
-      src="https://www.google.com/maps?q=Aurad(B),Bidar,Karnataka&output=embed"
-      width="100%" height="300" style="border:0;" allowfullscreen=""
-      loading="lazy">
-    </iframe>
-  </div>
+<!-- HERO -->
+<section class="contact-hero">
+<h1>Contact Us</h1>
+<p>
+We are always happy to help you choose the perfect gift.  
+Reach out to us anytime via phone or WhatsApp.
+</p>
 </section>
 
-<footer class="bg-dark text-white text-center p-3">
-  <p>📍 Aurad(B), Bidar, Karnataka - 585326</p>
-  <p>📞 7483917843 | 9663649768</p>
-</footer>
+<!-- CONTACT DETAILS -->
+<section class="container my-5">
+<div class="row g-4 text-center">
 
+<div class="col-md-4">
+<div class="contact-card">
+<h4>📍 Store Location</h4>
+<p>
+Aurad(B), Bidar District<br>
+Karnataka – 585326
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="contact-card">
+<h4>📞 Call Us</h4>
+<p>
+7483917843<br>
+9663649768
+</p>
+<a href="tel:7483917843" class="btn btn-primary contact-btn">Call Now</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="contact-card">
+<h4>💬 WhatsApp</h4>
+<p>
+Quick & easy ordering on WhatsApp
+</p>
+<a href="https://wa.me/917483917843" class="btn btn-success contact-btn">
+Chat on WhatsApp
+</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- MAP -->
+<section class="container my-5">
+<h2 class="text-center mb-4" style="font-family:'Playfair Display', serif;">
+Find Us on Map
+</h2>
+
+<div class="map-box">
+<iframe 
+  src="https://www.google.com/maps?q=Aurad(B)%20Bidar%20Karnataka&output=embed"
+  width="100%" height="350" style="border:0;" allowfullscreen loading="lazy">
+</iframe>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>📍 Aurad(B), Bidar, Karnataka - 585326</p>
+<p>📞 7483917843 | 9663649768</p>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
